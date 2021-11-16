@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-    <router-view/>
+    <TMenu style="margin-bottom: 30px" />
+    <router-view />
   </div>
 </template>
+<script lang="ts">
+import TMenu from "@/components/TMenu.vue";
+
+export default {
+  name: "app",
+  components: {
+    TMenu,
+  },
+};
+</script>
 
 <style>
 #app {
